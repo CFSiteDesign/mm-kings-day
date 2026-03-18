@@ -35,11 +35,11 @@ const HeroSection = () => {
       </div>
 
       {/* Dutch flag divider between text and image */}
-      <div className="h-2 dutch-flag-stripe-h md:hidden shrink-0 relative z-20" />
-      <div className="hidden md:block w-2 dutch-flag-stripe shrink-0 relative z-20" />
+      <div className="h-2 dutch-flag-stripe-h md:hidden shrink-0 relative z-10" />
+      <div className="hidden md:block w-2 dutch-flag-stripe shrink-0 relative z-10" />
 
       {/* Right - Image + Crown */}
-      <div className="flex-1 relative flex items-center justify-center min-h-[300px] md:min-h-[400px]">
+      <div className="flex-1 relative flex items-center justify-center min-h-[300px] md:min-h-[400px] z-20">
         <div className="relative w-4/5 aspect-square md:aspect-auto md:h-4/5 flex items-center justify-center">
           <img
             src={heroImage}
