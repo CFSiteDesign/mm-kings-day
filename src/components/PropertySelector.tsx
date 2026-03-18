@@ -19,7 +19,7 @@ const PropertySelector = () => {
     <section id="selector" className="relative py-12 md:py-24 bg-background">
       <div className="px-4 md:px-16 max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-8xl font-black uppercase mb-6 md:mb-8 text-foreground text-center md:text-left leading-none">
-          Pick your<br className="md:hidden" /> St. Paddy's<br />session
+          Pick your<br className="md:hidden" /> King's Day<br />session
         </h2>
 
         <div className="sticky top-0 z-20 bg-background py-3 md:py-4">
@@ -61,7 +61,7 @@ const PropertySelector = () => {
                     {prop.country}
                   </span>
                   <span className="text-secondary font-black uppercase text-xs animate-pulse">
-                    ☘️ EARLY ACCESS
+                    👑 EARLY ACCESS
                   </span>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-black uppercase mb-6 md:mb-12 flex-grow whitespace-nowrap overflow-hidden text-ellipsis group-hover:text-primary transition-colors">
