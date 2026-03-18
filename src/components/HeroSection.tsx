@@ -1,13 +1,21 @@
 import heroImage from "@/assets/hero-party.jpg";
 import crownImg from "@/assets/crown.png";
 import madMonkeyLogo from "@/assets/mad-monkey-logo.png";
+import heroBgIllustration from "@/assets/hero-bg-illustration.png";
 import SplashBadge from "@/components/SplashBadge";
 
 const HeroSection = () => {
   return (
     <section className="relative z-10 w-full min-h-[100svh] md:min-h-[85vh] flex flex-col md:flex-row border-b-4 border-divider overflow-visible">
       {/* Left - Text */}
-      <div className="flex-1 px-5 pt-2 pb-6 md:p-12 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-divider relative">
+      <div className="flex-1 px-5 pt-2 pb-6 md:p-12 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-divider relative overflow-hidden">
+        {/* Background illustration */}
+        <img
+          src={heroBgIllustration}
+          alt=""
+          className="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] md:w-[60%] opacity-[0.08] pointer-events-none z-0"
+        />
+
         <img src={madMonkeyLogo} alt="Mad Monkey" className="w-28 md:w-40 mb-3 md:mb-4 z-10" style={{ filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)' }} />
         
         <div className="mb-4 md:mb-6 z-10">
@@ -44,10 +52,6 @@ const HeroSection = () => {
         >
           GET EARLY ACCESS
         </a>
-
-        {/* Blue star accents */}
-        <span className="blue-star absolute top-8 right-6 md:top-12 md:right-16 text-2xl md:text-4xl z-10">✦</span>
-        <span className="blue-star absolute bottom-20 right-12 md:bottom-32 md:right-24 text-lg md:text-2xl z-10">✦</span>
       </div>
 
       {/* Right - Image + Crown */}
@@ -66,10 +70,6 @@ const HeroSection = () => {
             Mad Monkey 2026
           </div>
         </div>
-
-        {/* Blue star accents on image side */}
-        <span className="blue-star absolute top-6 left-4 md:top-12 md:left-8 text-xl md:text-3xl z-10">✦</span>
-        <span className="blue-star absolute bottom-12 right-6 md:bottom-20 md:right-12 text-sm md:text-xl z-10">✦</span>
 
         {/* Crown - floating element */}
         <img

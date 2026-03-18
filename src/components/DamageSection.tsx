@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import cardFreeflow from "@/assets/card-freeflow.jpg";
 import cardDjs from "@/assets/card-djs.jpg";
 import cardBoatparty from "@/assets/card-boatparty.jpg";
+import sectionBgIllustration from "@/assets/section-bg-illustration.png";
 import SplashBadge from "@/components/SplashBadge";
 
 const CARDS = [
@@ -76,16 +77,18 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
 
 const DamageSection = () => {
   return (
-    <section className="relative py-12 md:py-24 px-4 md:px-16 orange-gradient-bg border-b-4 border-divider overflow-visible">
-      {/* Blue star accents */}
-      <span className="blue-star absolute top-6 left-6 md:top-12 md:left-16 text-2xl md:text-4xl">✦</span>
-      <span className="blue-star absolute top-10 right-8 md:top-16 md:right-20 text-lg md:text-3xl">✦</span>
-      <span className="blue-star absolute bottom-8 right-12 md:bottom-16 md:right-32 text-xl md:text-3xl">✦</span>
+    <section className="relative py-12 md:py-24 px-4 md:px-16 orange-gradient-bg border-b-4 border-divider overflow-hidden">
+      {/* Background illustration */}
+      <img
+        src={sectionBgIllustration}
+        alt=""
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] md:w-[70%] opacity-[0.12] pointer-events-none z-0"
+      />
 
-      <h2 className="text-4xl md:text-8xl font-black uppercase text-center mb-8 md:mb-16 text-orange-pale leading-none tracking-tighter">
+      <h2 className="text-4xl md:text-8xl font-black uppercase text-center mb-8 md:mb-16 text-orange-pale leading-none tracking-tighter relative z-10">
         The King's Day Survival Kit
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-7xl mx-auto relative z-10">
         {CARDS.map((card) => (
           <DamageCard key={card.title} card={card} />
         ))}
