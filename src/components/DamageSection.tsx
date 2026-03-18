@@ -53,9 +53,9 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
   return (
     <div
       ref={ref}
-      className="bg-card border-2 border-border p-4 md:p-6 group transition-transform hover:-translate-y-2"
+      className="bg-card border-2 border-orange-deep p-4 md:p-6 group transition-transform hover:-translate-y-2"
     >
-      <div className="aspect-video bg-muted border-2 border-border mb-4 md:mb-6 overflow-hidden">
+      <div className="aspect-video bg-muted border-2 border-orange-deep mb-4 md:mb-6 overflow-hidden">
         <img
           src={card.image}
           alt={card.title}
@@ -64,9 +64,9 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
           } md:scale-100`}
         />
       </div>
-      <h3 className="text-2xl md:text-3xl font-black uppercase mb-2 md:mb-3">{card.title}</h3>
-      <p className="text-base md:text-lg font-bold leading-snug">{card.description}</p>
-      <div className={`mt-4 md:mt-6 inline-block bg-primary text-primary-foreground px-3 py-1 text-sm font-black uppercase ${card.rotation}`}>
+      <h3 className="text-2xl md:text-3xl font-black uppercase mb-2 md:mb-3 text-orange-pale">{card.title}</h3>
+      <p className="text-base md:text-lg font-bold leading-snug text-orange-pale/70">{card.description}</p>
+      <div className={`mt-4 md:mt-6 inline-block bg-orange-light text-orange-deep px-3 py-1 text-sm font-black uppercase ${card.rotation}`}>
         {card.badge}
       </div>
     </div>
@@ -75,7 +75,7 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
 
 const DamageSection = () => {
   return (
-    <section className="relative py-12 md:py-24 px-4 md:px-16 bg-primary border-b-4 border-divider">
+    <section className="relative py-12 md:py-24 px-4 md:px-16 orange-gradient-bg border-b-4 border-divider">
       <h2 className="text-4xl md:text-8xl font-black uppercase text-center mb-8 md:mb-16 text-primary-foreground leading-none tracking-tighter">
         The King's Day Survival Kit
       </h2>

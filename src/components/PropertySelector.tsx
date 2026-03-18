@@ -18,7 +18,7 @@ const PropertySelector = () => {
   return (
     <section id="selector" className="relative py-12 md:py-24 bg-background">
       <div className="px-4 md:px-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-8xl font-black uppercase mb-6 md:mb-8 text-foreground text-center md:text-left leading-none">
+        <h2 className="text-3xl md:text-8xl font-black uppercase mb-6 md:mb-8 text-orange-pale text-center md:text-left leading-none">
           Pick your<br className="md:hidden" /> King's Day<br />session
         </h2>
 
@@ -27,7 +27,7 @@ const PropertySelector = () => {
             <input
               type="text"
               placeholder="SEARCH LOCATION..."
-              className="w-full p-4 md:p-6 text-lg md:text-2xl font-black border-2 border-border uppercase outline-none focus:bg-card bg-card"
+              className="w-full p-4 md:p-6 text-lg md:text-2xl font-black border-2 border-orange-deep uppercase outline-none focus:border-orange-light bg-card text-orange-pale placeholder:text-muted-foreground"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -36,10 +36,10 @@ const PropertySelector = () => {
                 <button
                   key={country}
                   onClick={() => setFilter(country)}
-                  className={`whitespace-nowrap px-4 md:px-8 py-2 md:py-3 font-black uppercase text-sm md:text-lg border-2 border-border transition-all ${
+                  className={`whitespace-nowrap px-4 md:px-8 py-2 md:py-3 font-black uppercase text-sm md:text-lg border-2 transition-all ${
                     filter === country
-                      ? "bg-primary text-primary-foreground translate-x-1 translate-y-1 shadow-none"
-                      : "bg-card text-foreground hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+                      ? "bg-orange-light text-orange-deep border-orange-light translate-x-1 translate-y-1 shadow-none"
+                      : "bg-card text-orange-pale border-orange-deep hover:border-orange-light hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
                   }`}
                 >
                   {country}
@@ -54,17 +54,17 @@ const PropertySelector = () => {
             filteredProperties.map((prop) => (
               <div
                 key={prop.id}
-                className="bg-card border-2 border-border flex flex-col p-5 md:p-8 brutalist-card-hover group"
+                className="bg-card border-2 border-orange-deep flex flex-col p-5 md:p-8 brutalist-card-hover group"
               >
                 <div className="flex justify-between items-start mb-4 md:mb-6">
-                  <span className="bg-primary text-primary-foreground px-2 md:px-3 py-1 text-xs font-black uppercase">
+                  <span className="bg-orange-deep text-orange-pale px-2 md:px-3 py-1 text-xs font-black uppercase">
                     {prop.country}
                   </span>
-                  <span className="text-secondary font-black uppercase text-xs animate-pulse">
+                  <span className="text-orange-light font-black uppercase text-xs animate-pulse">
                     👑 EARLY ACCESS
                   </span>
                 </div>
-                <h3 className="text-2xl md:text-3xl font-black uppercase mb-6 md:mb-12 flex-grow whitespace-nowrap overflow-hidden text-ellipsis group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl font-black uppercase mb-6 md:mb-12 flex-grow whitespace-nowrap overflow-hidden text-ellipsis text-orange-pale group-hover:text-orange-light transition-colors">
                   {prop.name}
                 </h3>
                 {prop.url ? (
@@ -72,12 +72,12 @@ const PropertySelector = () => {
                     href={prop.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full text-center bg-primary text-primary-foreground font-black uppercase py-3 md:py-4 border-2 border-primary hover:brightness-110 transition-colors text-sm md:text-base"
+                    className="block w-full text-center font-black uppercase py-3 md:py-4 border-2 border-primary hover:brightness-110 transition-colors text-sm md:text-base orange-gradient-bg text-primary-foreground"
                   >
                     GET ACCESS
                   </a>
                 ) : (
-                  <span className="block w-full text-center bg-muted text-muted-foreground font-black uppercase py-3 md:py-4 border-2 border-border text-sm md:text-base cursor-not-allowed">
+                  <span className="block w-full text-center bg-muted text-muted-foreground font-black uppercase py-3 md:py-4 border-2 border-orange-deep text-sm md:text-base cursor-not-allowed">
                     COMING SOON
                   </span>
                 )}
@@ -85,7 +85,7 @@ const PropertySelector = () => {
             ))
           ) : (
             <div className="col-span-full py-12 md:py-20 text-center">
-              <p className="text-2xl md:text-4xl font-black uppercase">Nothing found. Keep drinking.</p>
+              <p className="text-2xl md:text-4xl font-black uppercase text-orange-pale">Nothing found. Keep drinking.</p>
             </div>
           )}
         </div>
