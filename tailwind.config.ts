@@ -55,6 +55,11 @@ export default {
           DEFAULT: "hsl(var(--cranky))",
           foreground: "hsl(var(--cranky-foreground))",
         },
+        "orange-light": "hsl(var(--orange-light))",
+        "orange-pale": "hsl(var(--orange-pale))",
+        "orange-deep": "hsl(var(--orange-deep))",
+        "dutch-red": "hsl(var(--dutch-red))",
+        "dutch-blue": "hsl(var(--dutch-blue))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

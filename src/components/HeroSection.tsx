@@ -8,14 +8,14 @@ const HeroSection = () => {
       {/* Left - Text */}
       <div className="flex-1 bg-background px-5 pt-2 pb-6 md:p-12 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-divider relative">
         <img src={madMonkeyLogo} alt="Mad Monkey" className="w-28 md:w-40 mb-3 md:mb-4 z-10" style={{ filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)' }} />
-        <div className="mb-4 md:mb-6 inline-flex items-center gap-2 bg-primary text-primary-foreground font-black uppercase px-4 py-2 text-xs md:text-lg border-2 border-primary -rotate-2 z-10 rounded-sm" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
+        <div className="mb-4 md:mb-6 inline-flex items-center gap-2 font-black uppercase px-4 py-2 text-xs md:text-lg border-2 border-orange-light -rotate-2 z-10 rounded-sm bg-orange-light text-orange-deep" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.15)' }}>
           April 27th 2026
         </div>
         <h1 className="text-5xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] mb-5 md:mb-8 z-10">
           KING'S<br />
-          <span className="text-primary">DAY PARTY.</span>
+          <span className="text-orange-light">DAY PARTY.</span>
         </h1>
-        <p className="text-[13px] md:text-2xl font-bold mb-6 md:mb-10 max-w-xl leading-relaxed z-10">
+        <p className="text-[13px] md:text-2xl font-bold mb-6 md:mb-10 max-w-xl leading-relaxed z-10 text-orange-pale/80">
           Orange is the colour, the crown's on your head,<br />
           Free-flow is pouring, the party's widespread.<br />
           Boat parties, DJs, and chaos to spare,<br />
@@ -23,7 +23,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#selector"
-          className="w-full md:w-auto text-center bg-primary text-primary-foreground text-lg md:text-2xl font-black uppercase px-8 py-4 md:px-12 md:py-6 border-2 border-primary hover:brightness-110 active:translate-x-1 active:translate-y-1 z-10 transition-all"
+          className="w-full md:w-auto text-center text-lg md:text-2xl font-black uppercase px-8 py-4 md:px-12 md:py-6 border-2 border-primary hover:brightness-110 active:translate-x-1 active:translate-y-1 z-10 transition-all orange-gradient-bg text-primary-foreground"
         >
           GET EARLY ACCESS
         </a>
@@ -35,13 +35,13 @@ const HeroSection = () => {
           <img
             src={heroImage}
             alt="King's Day Party"
-            className="w-full h-full object-cover border-2 border-border brutalist-shadow rotate-3"
+            className="w-full h-full object-cover border-2 border-orange-light brutalist-shadow rotate-3"
             style={{ objectPosition: '50% 20%' }}
           />
-          <div className="absolute top-4 right-4 md:top-10 md:right-10 bg-primary text-primary-foreground p-2 md:p-4 border-2 border-primary font-black text-sm md:text-xl uppercase rotate-12 shadow-lg z-20">
+          <div className="absolute top-4 right-4 md:top-10 md:right-10 bg-orange-light text-orange-deep p-2 md:p-4 border-2 border-orange-pale font-black text-sm md:text-xl uppercase rotate-12 shadow-lg z-20">
             👑 Proost!
           </div>
-          <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-card text-foreground p-2 md:p-4 border-2 border-border font-black text-sm md:text-xl uppercase -rotate-6 shadow-lg z-20">
+          <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-card text-orange-pale p-2 md:p-4 border-2 border-orange-deep font-black text-sm md:text-xl uppercase -rotate-6 shadow-lg z-20">
             Mad Monkey 2026
           </div>
         </div>

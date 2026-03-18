@@ -31,14 +31,14 @@ const FooterSection = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-black uppercase text-xs md:text-sm hover:text-primary transition-colors border-2 border-border px-3 md:px-4 py-1.5"
+                className="font-black uppercase text-xs md:text-sm hover:text-orange-light transition-colors border-2 border-orange-deep px-3 md:px-4 py-1.5 text-orange-pale"
               >
                 {link.name}
               </a>
             ))}
           </div>
 
-          <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-foreground/30">
+          <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.3em] md:tracking-[0.4em] text-orange-pale/20">
             © 2026 MAD MONKEY HOSTELS. LONG LIVE THE KING.
           </p>
         </div>
