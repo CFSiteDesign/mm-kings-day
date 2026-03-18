@@ -19,15 +19,11 @@ const HeroSection = () => {
           <span className="text-orange-pale">PARTY.</span>
         </h1>
         
-        <p className="text-xs italic font-bold mb-3 md:mb-4 z-10 text-orange-light/80 tracking-wide">
-          Backpacker party madness
-        </p>
-
         <p className="text-[13px] md:text-2xl font-bold mb-6 md:mb-10 max-w-xl leading-relaxed z-10 text-orange-pale/70">
-          Orange is the colour, the crown's on your head,<br />
-          Free-flow is pouring, the party's widespread.<br />
-          Boat parties, DJs, and chaos to spare,<br />
-          Backpacker royalty — be there or be&nbsp;square.
+          The canals are flowin', the drinks never stop,<br />
+          Crowns on our heads and the bass gonna drop.<br />
+          One day, one city, no sleep till it's done,<br />
+          Mad Monkey's callin' — the King says it's&nbsp;on.
         </p>
 
         <a
