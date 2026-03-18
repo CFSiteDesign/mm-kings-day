@@ -1,29 +1,27 @@
 import { useEffect, useRef, useState } from "react";
 import cardFreeflow from "@/assets/card-freeflow.jpg";
 import cardDjs from "@/assets/card-djs.jpg";
-import cardMates from "@/assets/card-mates.jpg";
 import cardBoatparty from "@/assets/card-boatparty.jpg";
-import cardGames from "@/assets/card-games.jpg";
 
 const CARDS = [
   {
     image: cardFreeflow,
-    title: "Bottomless Bevvies",
-    description: "3 hours of free-flow fuel. We're pouring, you're roaring.",
+    title: "Free-Flow Party",
+    description: "Hours of free-flow fuel. We're pouring orange, you're wearing orange. It's a beautiful thing.",
     badge: "Limited Tickets",
     rotation: "rotate-2",
   },
   {
     image: cardDjs,
-    title: "DJs + Devilment",
-    description: "Banging tunes all night. From Irish folk remixes to filthy techno — the craic doesn't stop.",
-    badge: "All Night",
+    title: "Live DJs All Day",
+    description: "Banging tunes from noon to midnight. From Dutch house to filthy techno — the party doesn't stop.",
+    badge: "All Day",
     rotation: "-rotate-2",
   },
   {
     image: cardBoatparty,
-    title: "Boat Party",
-    description: "One boat. No escape. The most unhinged party on the water.",
+    title: "Boat Parties",
+    description: "One boat. No escape. The most unhinged King's Day party on the water.",
     badge: "Sell Out Warning",
     rotation: "-rotate-1",
   },
@@ -79,7 +77,7 @@ const DamageSection = () => {
   return (
     <section className="relative py-12 md:py-24 px-4 md:px-16 bg-primary border-b-4 border-divider">
       <h2 className="text-4xl md:text-8xl font-black uppercase text-center mb-8 md:mb-16 text-primary-foreground leading-none tracking-tighter">
-        The St. Paddy's Survival Kit
+        The King's Day Survival Kit
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 max-w-7xl mx-auto">
         {CARDS.map((card) => (
