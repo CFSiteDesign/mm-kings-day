@@ -1,7 +1,7 @@
 import heroImage from "@/assets/hero-party.jpg";
 import crownImg from "@/assets/crown.png";
 import madMonkeyLogo from "@/assets/mad-monkey-logo.png";
-import heroBgIllustration from "@/assets/hero-bg-illustration.png";
+
 import SplashBadge from "@/components/SplashBadge";
 
 const HeroSection = () => {
@@ -9,12 +9,6 @@ const HeroSection = () => {
     <section className="relative z-10 w-full min-h-[100svh] md:min-h-[85vh] flex flex-col md:flex-row border-b-4 border-divider overflow-visible">
       {/* Left - Text */}
       <div className="flex-1 px-5 pt-2 pb-6 md:p-12 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-divider relative overflow-hidden">
-        {/* Background illustration */}
-        <img
-          src={heroBgIllustration}
-          alt=""
-          className="absolute right-0 top-1/2 -translate-y-1/2 w-[70%] md:w-[60%] opacity-[0.08] pointer-events-none z-0"
-        />
 
         <img src={madMonkeyLogo} alt="Mad Monkey" className="w-28 md:w-40 mb-3 md:mb-4 z-10" style={{ filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)' }} />
         
