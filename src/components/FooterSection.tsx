@@ -4,7 +4,7 @@ const FooterSection = () => {
   return (
     <footer className="bg-card text-foreground border-t-4 border-divider">
       {/* Dutch flag stripe */}
-      <div className="h-2 dutch-flag-stripe" />
+      <div className="h-3 dutch-flag-stripe" />
       
       <div className="py-8 md:py-12 px-4 md:px-16">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 md:gap-8">
