@@ -18,8 +18,8 @@ const HeroSection = () => {
         <p className="text-[13px] md:text-2xl font-bold mb-6 md:mb-10 max-w-xl leading-relaxed z-10">
           Orange is the colour, the crown's on your head,<br />
           Free-flow is pouring, the party's widespread.<br />
-          Boat parties, DJs, and madness all day,<br />
-          Backpacker royalty — it's King's&nbsp;Day.
+          Boat parties, DJs, and chaos to spare,<br />
+          Backpacker royalty — be there or be&nbsp;square.
         </p>
         <a
           href="#selector"
