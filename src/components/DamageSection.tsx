@@ -76,12 +76,7 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
 const DamageSection = () => {
   return (
     <section className="relative py-12 md:py-24 px-4 md:px-16 orange-gradient-bg overflow-hidden">
-      {/* Background illustration */}
-      <img
-        src={sectionBgIllustration}
-        alt=""
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] md:w-[70%] opacity-[0.12] pointer-events-none z-0"
-      />
+
 
       <h2 className="text-4xl md:text-8xl font-black uppercase text-center mb-8 md:mb-16 text-orange-pale leading-none tracking-tighter relative z-10">
         The King's Day Survival Kit
