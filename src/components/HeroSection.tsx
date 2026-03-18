@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative z-10 w-full min-h-[100svh] md:min-h-[85vh] flex flex-col md:flex-row overflow-visible">
       {/* Left - Text */}
-      <div className="flex-1 px-5 pt-2 pb-6 md:p-12 flex flex-col justify-center items-start border-b-4 md:border-b-0 md:border-r-4 border-orange-deep/30 relative overflow-hidden">
+      <div className="flex-1 px-5 pt-2 pb-6 md:p-12 flex flex-col justify-center items-start relative overflow-hidden">
         <img src={madMonkeyLogo} alt="Mad Monkey" className="w-28 md:w-40 mb-3 md:mb-4 z-10" style={{ filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)' }} />
         
         <div className="mb-4 md:mb-6 inline-flex items-center gap-2 font-black uppercase px-4 py-2 text-xs md:text-lg border-2 border-orange-light -rotate-2 z-10 rounded-sm bg-orange-light text-orange-deep" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.15)' }}>
@@ -33,6 +33,10 @@ const HeroSection = () => {
           GET EARLY ACCESS
         </a>
       </div>
+
+      {/* Dutch flag divider between text and image */}
+      <div className="h-2 dutch-flag-stripe-h md:hidden shrink-0 relative z-20" />
+      <div className="hidden md:block w-2 dutch-flag-stripe shrink-0 relative z-20" />
 
       {/* Right - Image + Crown */}
       <div className="flex-1 relative flex items-center justify-center min-h-[300px] md:min-h-[400px]">
