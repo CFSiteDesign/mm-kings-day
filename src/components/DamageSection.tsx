@@ -3,7 +3,6 @@ import cardFreeflow from "@/assets/card-freeflow.jpg";
 import cardDjs from "@/assets/card-djs.jpg";
 import cardBoatparty from "@/assets/card-boatparty.jpg";
 import sectionBgIllustration from "@/assets/section-bg-illustration.png";
-import SplashBadge from "@/components/SplashBadge";
 
 const CARDS = [
   {
@@ -55,7 +54,7 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
   return (
     <div
       ref={ref}
-      className="bg-card border-2 border-orange-deep p-4 md:p-6 group transition-transform hover:-translate-y-2 relative"
+      className="bg-card border-2 border-orange-deep p-4 md:p-6 group transition-transform hover:-translate-y-2"
     >
       <div className="aspect-video bg-muted border-2 border-orange-deep mb-4 md:mb-6 overflow-hidden">
         <img
@@ -68,8 +67,8 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
       </div>
       <h3 className="text-2xl md:text-3xl font-black uppercase mb-2 md:mb-3 text-orange-pale">{card.title}</h3>
       <p className="text-base md:text-lg font-bold leading-snug text-orange-pale/60">{card.description}</p>
-      <div className="absolute -top-4 -right-3 md:-top-5 md:-right-4">
-        <SplashBadge size="sm" rotation={card.rotation}>{card.badge}</SplashBadge>
+      <div className={`mt-4 md:mt-6 inline-block bg-orange-light text-orange-deep px-3 py-1 text-sm font-black uppercase ${card.rotation}`}>
+        {card.badge}
       </div>
     </div>
   );
