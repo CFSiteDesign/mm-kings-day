@@ -186,6 +186,18 @@
     );
   }
 
+  .dutch-flag-stripe-h {
+    background: linear-gradient(
+      to right,
+      hsl(0, 78%, 42%) 0%,
+      hsl(0, 78%, 42%) 33.33%,
+      hsl(0, 0%, 100%) 33.33%,
+      hsl(0, 0%, 100%) 66.66%,
+      hsl(225, 75%, 38%) 66.66%,
+      hsl(225, 75%, 38%) 100%
+    );
+  }
+
   .orange-gradient-bg {
     background: linear-gradient(
       135deg,
