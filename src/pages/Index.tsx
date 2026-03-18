@@ -8,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <HeroSection />
       <DamageSection />
-      
+      <PropertySelector />
       <FooterSection />
     </div>
   );

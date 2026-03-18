@@ -67,20 +67,9 @@ const PropertySelector = () => {
                 <h3 className="text-2xl md:text-3xl font-black uppercase mb-6 md:mb-12 flex-grow whitespace-nowrap overflow-hidden text-ellipsis text-orange-pale group-hover:text-orange-light transition-colors">
                   {prop.name}
                 </h3>
-                {prop.url ? (
-                  <a
-                    href={prop.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full text-center font-black uppercase py-3 md:py-4 border-2 border-primary hover:brightness-110 transition-colors text-sm md:text-base orange-gradient-bg text-primary-foreground"
-                  >
-                    GET ACCESS
-                  </a>
-                ) : (
-                  <span className="block w-full text-center bg-muted text-muted-foreground font-black uppercase py-3 md:py-4 border-2 border-orange-deep text-sm md:text-base cursor-not-allowed">
-                    COMING SOON
-                  </span>
-                )}
+                <span className="block w-full text-center font-black uppercase py-3 md:py-4 border-2 border-primary hover:brightness-110 transition-colors text-sm md:text-base orange-gradient-bg text-primary-foreground cursor-default">
+                  COMING SOON
+                </span>
               </div>
             ))
           ) : (
