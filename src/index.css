@@ -234,10 +234,4 @@
     );
   }
 
-  /* Blue star accent like in the poster */
-  .blue-star {
-    color: hsl(225, 75%, 38%);
-    font-size: 1.5rem;
-    line-height: 1;
-  }
 }
