@@ -1,7 +1,7 @@
 import heroImage from "@/assets/hero-party.jpg";
 import crownImg from "@/assets/crown.png";
 import madMonkeyLogo from "@/assets/mad-monkey-logo.png";
-import heroBgIllustration from "@/assets/hero-bg-illustration.png";
+
 import SplashBadge from "@/components/SplashBadge";
 
 const HeroSection = () => {
