@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import cardFreeflow from "@/assets/card-freeflow.jpg";
 import cardDjs from "@/assets/card-djs.jpg";
 import cardBoatparty from "@/assets/card-boatparty.jpg";
-import sectionBgIllustration from "@/assets/section-bg-illustration.png";
 
 const CARDS = [
   {
