@@ -76,7 +76,7 @@ const DamageCard = ({ card }: { card: typeof CARDS[number] }) => {
 
 const DamageSection = () => {
   return (
-    <section className="relative py-12 md:py-24 px-4 md:px-16 orange-gradient-bg border-b-4 border-divider overflow-hidden">
+    <section className="relative py-12 md:py-24 px-4 md:px-16 orange-gradient-bg overflow-hidden">
       {/* Background illustration */}
       <img
         src={sectionBgIllustration}
