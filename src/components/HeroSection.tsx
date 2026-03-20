@@ -4,7 +4,7 @@ import madMonkeyLogo from "@/assets/mad-monkey-logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative z-30 w-full min-h-[100svh] md:min-h-[85vh] flex flex-col md:flex-row overflow-visible">
+    <section className="relative z-30 w-full md:min-h-[85vh] flex flex-col md:flex-row overflow-visible">
       {/* Left - Text */}
       <div className="flex-none md:flex-1 px-5 pt-2 pb-2 md:p-12 flex flex-col justify-center items-start relative overflow-hidden">
         <img src={madMonkeyLogo} alt="Mad Monkey" className="w-28 md:w-40 mb-3 md:mb-4 z-10" style={{ filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)' }} />
