@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const BUBBLE_COUNT = 25;
+const BUBBLE_COUNT = 80;
 
 interface Bubble {
   x: number;
