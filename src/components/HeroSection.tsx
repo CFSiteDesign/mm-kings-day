@@ -19,8 +19,11 @@ const HeroSection = () => {
           <span className="text-orange-pale">PARTY.</span>
         </h1>
         
-        <p className="text-[13px] md:text-2xl font-bold mb-6 md:mb-10 max-w-xl z-10 text-orange-pale/70 leading-[1.8] md:leading-relaxed whitespace-pre-line">
-          {`The canals are flowin',\nthe drinks never stop,\nCrowns on our heads\nand the bass gonna drop.\nOne day, one city,\nno sleep till it's done,\nMad Monkey's callin' -\nthe King says it's on.`}
+        <p className="text-[13px] md:text-2xl font-bold mb-6 md:mb-10 max-w-xl z-10 text-orange-pale/70 leading-[1.8] md:leading-relaxed">
+          The canals are flowin', the drinks never stop,<br />
+          Crowns on our heads and the bass gonna drop.<br />
+          One day, one city, no sleep till it's done,<br />
+          Mad Monkey's callin' - the King says it's on.
         </p>
       </div>
 
