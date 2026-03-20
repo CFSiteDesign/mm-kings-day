@@ -25,13 +25,15 @@ const BeerBubbles = () => {
     if (!ctx) return;
 
     const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = document.documentElement.scrollHeight;
+      const parent = canvas.parentElement;
+      if (!parent) return;
+      canvas.width = parent.offsetWidth;
+      canvas.height = parent.offsetHeight;
     };
     resize();
 
     const resizeObserver = new ResizeObserver(resize);
-    resizeObserver.observe(document.documentElement);
+    if (canvas.parentElement) resizeObserver.observe(canvas.parentElement);
     window.addEventListener("resize", resize);
 
     const createBubble = (): Bubble => ({
