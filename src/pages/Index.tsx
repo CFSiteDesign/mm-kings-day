@@ -2,14 +2,12 @@ import HeroSection from "@/components/HeroSection";
 import DamageSection from "@/components/DamageSection";
 import PropertySelector from "@/components/PropertySelector";
 import FooterSection from "@/components/FooterSection";
-import BeerBubbles from "@/components/BeerBubbles";
 
 const DutchDivider = () => <div className="h-2 dutch-flag-stripe-h relative z-0" />;
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col relative">
-      <BeerBubbles />
       <HeroSection />
       <DutchDivider />
       <DamageSection />
