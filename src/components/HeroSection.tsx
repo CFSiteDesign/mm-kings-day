@@ -23,7 +23,7 @@ const HeroSection = () => {
           The canals are flowin', the drinks never stop,<br />
           Crowns on our heads and the bass gonna drop.<br />
           One day, one city, no sleep till it's done,<br />
-          Mad Monkey's callin' — the King says it's&nbsp;on.
+          Mad Monkey's callin' - the King says it's&nbsp;on.
         </p>
 
         <a
