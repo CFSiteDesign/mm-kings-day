@@ -12,7 +12,7 @@ export const COUNTRIES: CountryFilter[] = [
 ];
 
 export const PROPERTIES: Property[] = [
-  { id: 'kh-rong', name: 'Koh Rong', country: 'Cambodia', url: 'https://madmonkeyhostels.com/tours-events/king-s-day-event' },
+  { id: 'kh-rong', name: 'Koh Rong', country: 'Cambodia', url: 'https://madmonkeyhostels.com/tours-events/king-s-day-mad-monkey-koh-rong?currency=USD' },
   { id: 'kh-sdach', name: 'Koh Sdach', country: 'Cambodia', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-koh-sdach' },
   { id: 'kh-phnom', name: 'Phnom Penh', country: 'Cambodia', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-phnom-penh?currency=USD' },
   { id: 'kh-siem', name: 'Siem Reap', country: 'Cambodia', url: 'https://madmonkeyhostels.com/tours-events/king-s-day-mad-monkey-siem-reap' },
