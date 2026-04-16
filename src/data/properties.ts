@@ -31,7 +31,7 @@ export const PROPERTIES: Property[] = [
   { id: 'ph-siquijor', name: 'Siquijor', country: 'Philippines', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-siquijor' },
   { id: 'th-bangkok', name: 'Bangkok', country: 'Thailand', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-bangkok' },
   { id: 'th-chiang', name: 'Chiang Mai', country: 'Thailand', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-chiang-mai' },
-  { id: 'th-pai', name: 'Pai', country: 'Thailand', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-pai' },
+  { id: 'th-pai', name: 'Pai', country: 'Thailand', url: 'https://madmonkeyhostels.com/tours-events/king-s-day-mad-monkey-pai' },
   { id: 'th-phuket', name: 'Phuket', country: 'Thailand', url: 'https://madmonkeyhostels.com/tours-events/kings-day-mad-monkey-phuket' },
   { id: 'vn-hanoi', name: 'Hanoi', country: 'Vietnam', url: 'https://madmonkeyhostels.com/tours-events/hanoi-old-quarters-biggest-kings-day-party-early-bird-rate' },
   { id: 'vn-hoian', name: 'Hoi An', country: 'Vietnam', url: 'https://madmonkeyhostels.com/tours-events/king-s-day-mad-monkey-hoi-an' },
